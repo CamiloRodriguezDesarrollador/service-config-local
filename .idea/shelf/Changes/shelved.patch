@@ -1,0 +1,37 @@
+Index: console-microservice-dev.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>console.property= Console Profile Developer\r\n\r\nspring.datasource.url=jdbc:mysql://157.90.91.29:3306/crcodese_proyectos\r\nspring.datasource.username=crcodese_admon\r\nspring.datasource.password=}lBS8=h5R-J,\r\n\r\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver\r\nspring.jpa.hibernate.ddl-auto=update\r\n\r\nauth.api.url = http://localhost:8080/api/auth/token\r\ndocument.api.url = http://localhost:8080/api/document\r\nuser.api.url = http://localhost:8080/api/user\r\nauthorization.api.url = http://localhost:8080/api/authorization\r\nclient.api.url = http://localhost:8080/api/client\r\naudit.api.url = http://localhost:8080/api/audit\r\n\r\napp.principal = 1\r\napp.console = 2\r\napp.provider = 3\r\n\r\np.admin.plataform = 1\r\np.super.admin=2\r\np.admin=3\r\np.reader=4\r\np.provider=5\r\n\r\nt.admin.plataform = 1\r\nt.client = 2\r\nt.provider =3\r\n\r\nt.process = 1\r\np.process = 2
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/console-microservice-dev.properties b/console-microservice-dev.properties
+--- a/console-microservice-dev.properties	(revision f54ccb8d9743c634b60a095561b4e2bd3ac7bf1e)
++++ b/console-microservice-dev.properties	(date 1701572250521)
+@@ -14,6 +14,8 @@
+ client.api.url = http://localhost:8080/api/client
+ audit.api.url = http://localhost:8080/api/audit
+ 
++eureka.instance.hostname=localhost
++
+ app.principal = 1
+ app.console = 2
+ app.provider = 3
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1692547405299)
++++ b/.idea/.gitignore	(date 1692547405299)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
